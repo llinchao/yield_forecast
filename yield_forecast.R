@@ -9,7 +9,7 @@ for (i in 1:6) {   # for six time-intervals
   data=dataset[[i]]
   y=as.numeric(Yield[,i])
 
-  data=(AGdata[,8:(ncol(AGdata))])
+  data=(AGdata[,1:(ncol(AGdata))])
   
   for (j in 1:6) {  
     
