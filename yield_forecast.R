@@ -9,8 +9,7 @@ for (i in 1:6) {   # for six time-intervals
   data=dataset[[i]]
   y=as.numeric(Yield[,i])
 
-  data=(AGdata[,1:(ncol(AGdata))])
-  
+ 
   for (j in 1:6) {  
     
     NT=c(200,400,600,800,1000,1200) # set different values for ntree
