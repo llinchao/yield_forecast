@@ -1,9 +1,13 @@
 library(randomForest)
 ###### optimize parameters  ########
+
 parm=vector('list')
 OUT=vector('list')
 dataset  # dataset in training model
 Yield    # corresponding
+RNGkind(sample.kind = "Rounding")
+set.seed(120)
+
 for (i in 1:6) {   # for six time-intervals
   
   data=dataset[[i]]
